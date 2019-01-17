@@ -1,0 +1,359 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: Microsoft Jhenghei;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+    display: none;
+}
+
+input[type=search] {
+    /* the webkit overrides need to stay at the top */
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    /* your styles here */
+}
+
+/*
+css reset end
+*********************************************************************/
+
+/********************************************************************* 
+global css setting  
+*/
+.clearfix {
+    clear: both;
+}
+
+
+
+/********************************************************************* 
+layout css setting  
+*/
+header {
+    background: rgba(74, 74, 74, 0.5);
+    position: fixed;
+    height: 76px;
+    width: 100%;
+    z-index: 999;
+}
+
+.logo {
+    display: block;
+    height: 76px;
+    background: url('../img/logo.png') no-repeat left center;
+    margin-left: 24px;
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+}
+
+.topMenu {
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 0;
+    margin-right: 24px;
+}
+
+.topMenu li {
+    float: left;
+    margin: 0 12px;
+    padding: 28.5px;
+}
+
+.topMenu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.topMenu li:hover,
+.topMenu li:focus {
+    border-bottom: 5px solid #00cc99;
+}
+
+.showmenu {
+    display: none;
+}
+
+@media (max-width:767px) {
+    .topMenu {
+        /*隱藏選單開始*/
+        max-height: 0px;
+        overflow: hidden;
+        /*隱藏選單結束*/
+        transition: max-height 0.5s;
+        /*絕對定位疊在網頁上*/
+        position: absolute;
+        z-index: 999;
+        top: 76px;
+        right: 0;
+        margin-right: 0px;
+    }
+
+    .topMenu li {
+        float: none;
+        border-bottom: 1px dashed #00cc99;
+        background: rgba(75, 75, 75, 0.8);
+        margin: 0px;
+        padding: 20px;
+    }
+
+    .showmenu {
+        display: block;
+        float: right;
+        margin: 22px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .menu-show .topMenu {
+        max-height: 200px
+    }
+}
+
+
+
+
+
+
+.banner-container {
+    width: 100%;
+    height: 560px;
+    position: relative;
+}
+
+.swiper-container {
+    height: 560px;
+}
+
+.banner-photo1 {
+    background: url("../img/banner.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.banner-photo2 {
+    background: url("../img/banner-2.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.banner-photo3 {
+    background: url("../img/banner-3.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.btn {
+    background: #00cc99;
+    background: #00cc99;
+    font-size: 20px;
+    color: #fff;
+    border-style: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    background: #4f6ef7;
+}
+
+.btn-with-arrow {
+    background: #00cc99 url('../img/arrow.png') no-repeat 85% center;
+    padding: 1em 3em 1em 2em;
+}
+
+.btn-with-arrow:hover {
+    background: #4f6ef7 url('../img/arrow.png') no-repeat 85% center;
+}
+
+/********************************************************************* 
+homepage css setting  
+*/
+.home-banner-context {
+    position: absolute;
+    z-index: 99;
+    float: left;
+    color: #00cc99;
+    font-size: 48px;
+    line-height: 72px;
+    margin: 150px 60px 60px 60px;
+}
+
+.btn-sm {
+    display: none;
+}
+
+@media (max-width:767px) {
+    .btn {
+        display: none;
+    }
+
+    .btn-sm {
+        display: block;
+        float: right;
+        background: #00cc99;
+        background: #00cc99;
+        font-size: 16px;
+        color: #fff;
+        border-style: none;
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 0.5em 1em;
+    }
+}
+/*********************************************************************
+course css setting  
+*/
+
+
+
+
+/********************************************************************* 
+faq css setting  
+*/

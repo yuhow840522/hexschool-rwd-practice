@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-hang-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <title>使用RWD做網站</title>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <meta name='description' content='use html & css to build a website' />
+    <meta property="og:title" content="使用HTML做網站" />
+    <meta property="og:description" content="六角學院html課程final project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/all1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+</head>
+
+<body>
+    <header class="clearfix">
+        <a href="index.html" class="logo">HexSchool logo</a>
+        <ul class="topMenu">
+            <li> <a href="index.html">首頁</a> </li>
+            <li> <a href="course.html">課程</a> </li>
+            <li> <a href="faq.html">問答</a> </li>
+        </ul>
+        <a href="#" class="showmenu"><img src="./img/hamburger.png" alt="hamburger menu"></a>
+    </header>
+    <div class="banner-container">
+        <div class="home-banner-context">
+            <h1>歡迎來到<span style="color: #fff">六角學院</span><br>帶你一起攻略前端設計</h1>
+            <input type="button" onClick="window.location.href='index.html'" value="馬上去註冊" class="btn btn-with-arrow">
+            <input type="button" onClick="window.location.href='index.html'" value="註冊" class="btn-sm">
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide banner-photo1"></div>
+                <div class="swiper-slide banner-photo2"></div>
+                <div class="swiper-slide banner-photo3"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- <div style="height:200px; background-color:yellow"></div> -->
+    <div class="main">
+
+        <div class="course-list clearfix">
+            <h2 class="title">精選課程</h2>
+            <p class="subtitle">幫助你拿到前端工程師的門票</p>
+            <a href="course.html" class="more-course">更多課程</a>
+            <ul class="course-container">
+                <li class="course-items">
+                    <a href="#"><img src="img/HTML.png" alt="HTML course"></a>
+                    <h3>Html 5 基礎教學</h3>
+                    <p>主流前端網站設計的基礎，透過實際的範例，瞭解正確的網站開發流程。</p>
+                </li>
+                <li class="course-items">
+                    <a href="#" class=""><img src="img/RWD.png" alt="RWD course"></a>
+                    <h3>響應式網站設計</h3>
+                    <p>六角學院提供業界響應式開發方法，讓學生瞭解完善的行動版開發觀念。</p>
+                </li>
+                <li class="course-items">
+                    <a href="#"><img src="img/jQuery.png" alt="jQuery course"></a>
+                    <h3>jQuery 實戰教學</h3>
+                    <p>分為四大主題：變數的使用、操作DOM、基本數學運算和套件運用。</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="course-compare">
+            <h2 class="title">課程比較</h2>
+            <p class="subtitle">線上課程與實體課程的差異</p>
+            <table>
+                <!-- <colgroup>                        </colgroup> -->
+                <thead>
+                    <tr>
+                        <th>項目</th>
+                        <th>六角學院 線上課程</th>
+                        <th>一般線上課程</th>
+                        <th>一般實體課程</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>費用</th>
+                        <td class="better-one">較低</td>
+                        <td class="better-one">較低</td>
+                        <td>較高</td>
+                    </tr>
+                    <tr>
+                        <th>學習效果</th>
+                        <td>一般</td>
+                        <td>較低</td>
+                        <td class="better-one">很好 </td>
+                    </tr>
+                    <tr>
+                        <th>Code review</th>
+                        <td class="better-one">有</td>
+                        <td>無</td>
+                        <td>不一定 </td>
+                    </tr>
+                    <tr>
+                        <th>課程更新進度</th>
+                        <td class="better-one">普通</td>
+                        <td class="better-one">普通</td>
+                        <td>較慢 </td>
+                    </tr>
+                    <tr>
+                        <th>多次複習</th>
+                        <td class="better-one">可</td>
+                        <td class="better-one">可</td>
+                        <td>不可 </td>
+                    </tr>
+                    <tr>
+                        <th>字幕</th>
+                        <td class="better-one">有</td>
+                        <td>不一定</td>
+                        <td>板書 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="subscribe">
+            <div class="subscribe-container clearfix">
+                <p>你就是六角的下一個學生！<br>快留下資料讓我們認識你吧</p>
+                <form>
+                    <input type="text" name="name" placeholder="你的名字是？">
+                    <input type="text" name="email" placeholder="example@mail.com.tw">
+                    <input type="submit" value="送 出" class="btn">
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="clearfix">
+        <div class="copyright">
+            <img src="img/logo.png" alt="HexSchool Logo">
+            <p>@ 2018 hexschool</p>
+        </div>
+        <ul class="socialContact">
+            <li> <a href="#">
+                    <img src="img/fb_logo.png" alt="facebook">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/twitter_logo.png" alt="twitter">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/ig_logo.png" alt="instagram">
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>

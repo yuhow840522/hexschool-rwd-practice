@@ -1,0 +1,737 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+    display: none;
+}
+
+input[type=search] {
+    /* the webkit overrides need to stay at the top */
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    /* your styles here */
+}
+
+/*
+css reset end
+*********************************************************************/
+
+/********************************************************************* 
+global css setting  
+*/
+.wrap {
+    font-family: Microsoft JhengHei;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.btn {
+    background: #00cc99;
+    background: #00cc99;
+    font-size: 20px;
+    color: #fff;
+    border-style: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    background: #4f6ef7;
+}
+
+.btn-with-arrow {
+    background: #00cc99 url('../img/arrow.png') no-repeat 85% center;
+    padding: 1em 3em 1em 2em;
+}
+
+.btn-with-arrow:hover {
+    background: #4f6ef7 url('../img/arrow.png') no-repeat 85% center;
+}
+
+.btn-in-banner {
+    margin-left: 60px;
+}
+
+/********************************************************************* 
+layout css setting  
+*/
+header {
+    background: rgba(74, 74, 74, 0.5);
+    position: fixed;
+    height: 76px;
+    width: 100%;
+}
+
+.logo {
+    display: block;
+    height: 76px;
+    background: url('../img/logo.png') no-repeat left center;
+    margin-left: 24px;
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+}
+
+.topMenu {
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 0;
+    margin-right: 24px;
+}
+
+.topMenu li {
+    float: left;
+    margin: 0 12px;
+    padding: 28.5px;
+    /* border: 1px solid #000; */
+}
+
+.topMenu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.topMenu li:hover,
+.topMenu li:focus {
+    border-bottom: 5px solid #00cc99;
+}
+
+footer {
+    background: #323228;
+    /* position: relative; */
+    height: 132px;
+}
+
+footer::before {
+    /* use pseudo ele to make vetical-align middle */
+    content: '';
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    background: #000;
+}
+
+.copyright {
+    width: 176px;
+    /*img 180*46*/
+    color: #94948d;
+    text-align: right;
+    margin-left: 24px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.socialContact {
+    float: right;
+    margin-right: 36px;
+    /* display: inline-block;
+    vertical-align: middle; */
+}
+
+.socialContact li {
+    float: left;
+    padding: 48px 0;
+    margin: 0 18px;
+}
+
+.socialContact a:hover {
+    border-bottom: 1px dotted #fff;
+}
+
+.main-3quarter {
+    max-width: 75%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.main-3quarter h1 {
+    display: inline-block;
+    color: #00cc99;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.main-3quarter h2 {
+    display: inline-block;
+    color: #9b9b9b;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+/********************************************************************* 
+homepage css setting  
+*/
+.banner-index {
+    height: 560px;
+    background: #202020 url('../img/banner.jpg') no-repeat left center;
+}
+
+.banner-index h1 {
+    color: #00cc99;
+    font-size: 48px;
+    line-height: 72px;
+    padding: 190px 0 60px 60px;
+}
+
+
+.course-list {
+    /* background: lightgray; */
+    padding-top: 20px;
+}
+
+.title {
+    font-size: 36px;
+    color: #00cc99;
+    display: inline;
+    margin-left: 60px;
+}
+
+.subtitle {
+    display: inline;
+    font-size: 20px;
+    color: #555550;
+    margin-left: 16px;
+}
+
+.more-course {
+    float: right;
+    margin-right: 60px;
+    text-decoration: none;
+    color: #00cc99;
+    border: 2px solid #00cc99;
+    border-radius: 10%;
+    padding: 8px 16px;
+}
+
+.more-course:hover {
+    color: #4f6ef7;
+    border: 2px solid #4f6ef7;
+}
+
+.course-container {
+    text-align: center;
+}
+
+.course-items {
+    display: inline-block;
+    width: 230px;
+    height: 230px;
+    background: #fff;
+    margin: 50px 18px;
+    padding: 2em;
+    box-shadow: 1px 5px 5px 2px rgba(90, 90, 90, 0.3);
+}
+
+.course-items h3 {
+    font-size: 20px;
+    margin: 10px auto;
+}
+
+.course-items p {
+    font-size: 16px;
+    color: #8d8d8d;
+    line-height: 1.25em;
+    text-align: left;
+}
+
+.course-compare {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 80%;
+    max-width: 80%;
+    margin: 32px auto;
+}
+
+thead {
+    background: #ebebeb;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.better-one {
+    color: #00cc99;
+    font-weight: bold;
+}
+
+.subscribe {
+    background: #ebebeb;
+    text-align: center;
+}
+
+.subscribe-container {
+    display: inline-block;
+    padding: 120px 0;
+}
+
+.subscribe-container>p {
+    margin: 0 30px;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.subscribe-container>form {
+    display: inline-block;
+    width: 300px;
+    margin: 0 30px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.subscribe-container input[type="text"],
+.subscribe-container input[type="email"] {
+    padding: 0.5em 0.6em;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    vertical-align: middle;
+    width: 280px;
+    margin-bottom: 20px;
+}
+
+/*********************************************************************
+course css setting  
+*/
+
+.banner-course {
+    height: 560px;
+    background: #000 url('../img/banner-2.jpg') no-repeat 10px -200px;
+}
+
+.banner-course h1 {
+    color: #fff;
+    font-size: 48px;
+    padding: 190px 0 24px 60px;
+}
+
+.banner-course p {
+    color: #00cc99;
+    font-size: 24px;
+    padding: 0px 0 60px 60px;
+}
+
+.stamp-container {
+    float: right;
+    margin-top: 190px;
+}
+
+.stamp {
+    margin: 0px 40px 0px 0px;
+}
+
+.stamp:last-child {
+    margin-right: 80px;
+}
+
+.teacher {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0 auto;
+}
+
+.teacher-pic {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 20px;
+}
+
+
+.teacher-name {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 20px;
+    margin: 0 20px;
+}
+
+
+.teacher-name p {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 12px 0;
+    color: #00cc99;
+}
+
+.teacher-name p:last-child {
+    color: #323228;
+}
+
+.teacher-exp {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.teacher-exp>li {
+    line-height: 1.75em;
+    color: #9b9b9b;
+    list-style-type: initial;
+}
+
+.introduce {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.introduce ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+.introduce li {
+    padding: 5px 0;
+}
+
+.syllabus {
+    padding: 0px 40px 40px 40px;
+    margin: 0 auto;
+}
+
+.syllabus ul {
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.syllabus li {
+    padding: 1em 2em;
+    color: #9b9b9b;
+}
+
+.syllabus li.bg-gray {
+    background-color: #ebebeb;
+    color: #323223;
+}
+
+
+.register {
+    background: #ebebeb;
+    text-align: center;
+}
+
+.register-container {
+    display: inline-block;
+    padding: 120px 0;
+
+}
+
+.register-container>p {
+    margin: 0 40px;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: left;
+}
+
+.register-container>input {
+    display: inline-block;
+    margin: 0 40px;
+    text-align: right;
+    vertical-align: text-bottom;
+}
+
+
+/********************************************************************* 
+faq css setting  
+*/
+
+.banner-faq {
+    height: 560px;
+    background: #2c2221 url('../img/banner-3.jpg') repeat-x center center;
+    background-size: contain;
+    text-align: center;
+}
+
+.banner-faq h1 {
+    color: #fff;
+    font-size: 48px;
+    padding: 220px 0 24px 0px;
+}
+
+.banner-faq p {
+    color: #00cc99;
+    font-size: 24px;
+    padding-bottom: 48px;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-container input[type="search"] {
+    padding: 0.6em 0.6em;
+    display: inline-block;
+    width: 60%;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    position: absolute;
+    margin: 0.5em 0 0.5em -2em;
+    z-index: 1;
+    color: #4f5b66;
+    cursor: pointer;
+}
+
+.mailto {
+    color: #00cc99;
+    text-decoration: none;
+    font-weight: bold;
+}
+.mailto:hover{
+    color: #4f6ef7;
+}
+.QA_box {
+    color: #9b9b9b;
+    line-height: 1.5em;
+}
+
+.QA_box .question {
+    font-size: 20px;
+    margin-top: 30px;
+    color: #323223;
+}
+
+.refund-alert {
+    margin-top: 30px;
+    color: #323223;
+}
+
+.QA_general {
+    padding: 40px 20px 0 20px;
+    margin: 0 auto;
+}
+
+.QA_pay {
+    padding: 40px 20px 0 20px;
+    margin: 0 auto;
+}
+
+.QA_box ol {
+    list-style: decimal;
+    margin-left: 3em;
+}
+
+/* .QA_box ul{ 
+    list-style-type: disc;
+    margin-left: 3em;
+} */
+
+.QA_box ul li:before {
+    content: "·";
+    font-size: 30px;
+    vertical-align: text-bottom;
+    margin-left: 1em;
+    margin-right: 4px;
+}
+
+
+.QA_refund {
+    padding: 40px 20px;
+    margin: 0 auto;
+}
+
+.QA-form {
+    background: #ebebeb;
+    text-align: center;
+}
+
+.QA-form-container {
+    display: inline-block;
+    padding: 60px 0 40px 0;
+}
+
+.QA-form-container>p {
+    margin: 0 30px;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: left;
+}
+
+.QA-form-container>form {
+    display: inline-block;
+    width: 300px;
+    margin: 0 30px;
+    text-align: right;
+    vertical-align: top;
+}
+
+.QA-form-container input[type="text"],
+.QA-form-container input[type="email"],
+textarea {
+    padding: 0.5em 0.6em;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    vertical-align: middle;
+    width: 280px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    resize: none;
+    /* close the resize Property */
+}
